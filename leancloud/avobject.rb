@@ -51,7 +51,6 @@ class AVResult < AVObject
     @results = []
     @data["results"].each do |item|
       object = AVObject.new(item.to_json)
-      puts object.dump_data
       @results << object
     end
   end
